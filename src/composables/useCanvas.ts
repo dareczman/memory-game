@@ -65,7 +65,7 @@ export function preloadImages(cards: Card[], drawCallback: () => void) {
   cards.forEach((card) => {
     if (!imageCache[card.image]) {
       const img = new Image()
-      img.src = card.image
+      img.src = `${import.meta.env.BASE_URL}${card.image}`
       img.onload = drawCallback
       imageCache[card.image] = img
     }

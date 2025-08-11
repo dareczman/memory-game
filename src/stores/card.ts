@@ -59,7 +59,7 @@ export const useCardStore = defineStore('card', () => {
     const [a, b] = selectedCards.value
     if (a.image === b.image) {
       a.matched = b.matched = true
-      playSound('/sounds/level-up-05-326133.mp3')
+      playSound(`${import.meta.env.BASE_URL}sounds/level-up-05-326133.mp3`)
     } else {
       a.revealed = b.revealed = false
     }
@@ -73,7 +73,7 @@ export const useCardStore = defineStore('card', () => {
     const card = getClickedCard(event)
     if (!card || card.revealed || card.matched) return
 
-    playSound('/sounds/bubble-pop-04-323580.mp3')
+    playSound(`${import.meta.env.BASE_URL}sounds/bubble-pop-04-323580.mp3`)
     revealCard(card)
 
     if (selectedCards.value.length === 2) {
