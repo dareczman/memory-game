@@ -16,8 +16,8 @@ export function handleMouseMove(cards: Card[], cols: number) {
       if (i === index) {
         const centerX = col * tileSize.value + tileSize.value / 2
         const centerY = row * tileSize.value + tileSize.value / 2
-        const dx = (mouseX - centerX) / 30
-        const dy = (mouseY - centerY) / 30
+        const dx = (mouseX - centerX) / 20
+        const dy = (mouseY - centerY) / 20
 
         gsap.to(card.parallaxOffset, {
           x: dx,

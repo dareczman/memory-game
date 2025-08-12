@@ -41,7 +41,7 @@ export function drawBoard(cards: Card[], cols: number, rows: number) {
     if (card.revealed || card.matched) {
       const img = imageCache[card.image]
       if (img && img.complete) {
-        const scale = 1.1 // lub dynamicznie w zależności od parallaxOffset
+        const scale = 1.1
 
         const offsetX = (tileW * (1 - scale)) / 2
         const offsetY = (tileH * (1 - scale)) / 2
@@ -56,7 +56,8 @@ export function drawBoard(cards: Card[], cols: number, rows: number) {
       }
     } else {
       ctx.fillStyle = '#222'
-      ctx.fillRect(tileX, tileY, tileW, tileH)
+      const padding = -1 // for prevent a gradient visibility under hidden card
+      ctx.fillRect(tileX + padding, tileY + padding, tileW - padding * 2, tileH - padding * 2)
     }
   })
 }
