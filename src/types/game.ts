@@ -7,7 +7,7 @@ export interface Card {
   parallaxOffset: { x: number; y: number }
 }
 
-type WeaponQuality = 'ancient' | 'common' | 'immortal' | 'legendary' | 'rare'
+type WeaponQuality = 'ancient' | 'common' | 'immortal' | 'legendary' | 'rare' | 'epic'
 
 export type Weapon = {
   quality: WeaponQuality

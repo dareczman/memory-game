@@ -19,4 +19,8 @@ export const qualityGradients = {
     active: ['#d53369', '#daae51'],
     inactive: ['#bf8a96', '#bfb37a'],
   },
+  epic: {
+    active: ['#8847ff', '#c27dff'],
+    inactive: ['#2b1b3d', '#4a2f69'],
+  },
 }

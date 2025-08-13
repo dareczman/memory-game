@@ -69,4 +69,20 @@ export const allWeapons: Weapon[] = [
     quality: 'rare',
     name: 'MP7_Cirrus',
   },
+  {
+    quality: 'epic',
+    name: 'Shadow_Daggers_Slaughter',
+  },
+  {
+    quality: 'epic',
+    name: 'Butterfly_Knife_Tiger_Tooth',
+  },
+  {
+    quality: 'epic',
+    name: 'Karambit_Stained',
+  },
+  {
+    quality: 'epic',
+    name: 'M9_Bayonet_Fade',
+  },
 ]

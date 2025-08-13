@@ -7,6 +7,11 @@
   font-family: "Lato", sans-serif;
 }
 
+body {
+  background-color: #171717;
+  color: #fff;
+}
+
 .fade-slide-enter-active,
 .fade-slide-leave-active {
   transition: all 0.3s ease;
