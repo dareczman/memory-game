@@ -55,7 +55,15 @@ export function drawBoard(cards: Card[], cols: number, rows: number) {
         )
       }
     } else {
-      ctx.fillStyle = '#222'
+      const gradientForNotRevealedCard = ctx.createLinearGradient(
+        tileX,
+        tileY,
+        tileX,
+        tileY + tileH,
+      )
+      gradientForNotRevealedCard.addColorStop(0, '#1b1d23')
+      gradientForNotRevealedCard.addColorStop(1, '#2d3140')
+      ctx.fillStyle = gradientForNotRevealedCard
       const padding = -1 // for prevent a gradient visibility under hidden card
       ctx.fillRect(tileX + padding, tileY + padding, tileW - padding * 2, tileH - padding * 2)
     }

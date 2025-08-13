@@ -37,9 +37,6 @@ onMounted(() => {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #171717; /* neutral-900 */
-  color: white;
-  font-family: Arial, sans-serif;
 }
 
 .app-footer {
