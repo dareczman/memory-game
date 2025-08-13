@@ -1,39 +1,23 @@
-# memory-cs2
+# 🎮 Memory Game – CS:GO Skins Edition
 
-This template should help get you started developing with Vue 3 in Vite.
+An interactive **Memory Game** built with **Vue 3 + Vite + TypeScript**, inspired by CS:GO weapon skins.  
+Flip the cards, match the pairs, and race against the clock to win as fast as possible!
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🚀 Features
+- 🖼️ **CS:GO Skins** – cards feature real CS:GO weapon skins.
+- 🕹️ **Seeded Game Mode** – replay the exact same game setup.
+- ⏱️ **Statistics** – move counter & timer.
+- 📜 **Game History** – save and load past games.
+- 🎨 **Animations & Effects** – gradients inspired by CS:GO rarity tiers.
+- 📱 **Responsive Design** – playable on desktop and mobile.
 
-## Type Support for `.vue` Imports in TS
+--- 
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+## 🛠️ Technologies
+- **Vue 3 (Composition API)**
+- **Vite**
+- **TypeScript**
+- **Pinia** – state management
+- **LocalStorage** – save game progress
